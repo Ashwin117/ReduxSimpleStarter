@@ -21,10 +21,9 @@ function mapStateToProps(state) {
 	};
 }
 
-function mapDispatchToProps(dispaptch) {
-	return bindActionCreators({ enterVideoName: enterVideoName }, dispaptch);
-} 
-
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators({ enterVideoName: enterVideoName }, dispatch);
+}
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

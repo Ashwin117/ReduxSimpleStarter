@@ -11,10 +11,24 @@ export function enterVideoName(event) {
 	}
 }
 
-function videoSearch(term) {
+export function selectVideo(event) {
+	return {
+		type: 'VIDEO_SELECT',
+		selectedVideo: event
+	}
+}
+
+function videoSearch(value) {
 	return new Promise((resolve, reject) => {
-		YTSearch({key: API_KEY, term: event.target.value}, (videos) => {
-			resolve (videos);
+		YTSearch({key: API_KEY, term: value}, (videos) => {
+			resolve(videos);
 		});
 	});
+}
+
+export function populateVideoList(videos) {
+	return {
+		type: 'VIDEO_LIST',
+		videoList: videos
+	}
 }

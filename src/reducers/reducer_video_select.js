@@ -4,10 +4,8 @@ export default function(state, action) {
 	}
 
 	switch(action.type) {
-		case 'VIDEO_TEXT':
-			return action.videoList;
-		case 'VIDEO_LIST':
-			return action.videoList;
+		case 'VIDEO_SELECT':
+			return action.selectedVideo;
 		default :
 			return state;
 	}
