@@ -9,12 +9,12 @@ import VideoDetail from '../components/video-detail';
 class VideoList extends Component {
 	render() {
 		if (this.props.videoList && !this.props.videoList.length) {
-			var vidList = this.props.videoList.then((videos) => {
+			this.props.videoList.then((videos) => {
 				this.props.populateVideoList(videos);
 			});
 		}
 
-		if (!this.props.videoList || !this.props.videoList.length) {
+		if (!this.props.videoList) {
 			return <div>Loading...</div>
 		} else {
 			var videoItems = this.props.videoList.map((video) => {

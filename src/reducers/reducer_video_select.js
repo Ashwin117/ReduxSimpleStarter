@@ -5,7 +5,7 @@ export default function(state, action) {
 
 	switch(action.type) {
 		case 'VIDEO_SELECT':
-			return action.selectedVideo;
+			return action.payload;
 		default :
 			return state;
 	}

@@ -14,7 +14,7 @@ export function enterVideoName(event) {
 export function selectVideo(event) {
 	return {
 		type: 'VIDEO_SELECT',
-		selectedVideo: event
+		payload: event
 	}
 }
 
