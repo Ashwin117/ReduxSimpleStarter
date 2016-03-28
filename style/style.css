@@ -1,0 +1,41 @@
+.login-title h3 {
+    font-size: 1.6em;
+    font-family: HelveticaNeue-Light,Helvetica Neue Light,helvetica,arial,sans-serif;
+    color: #2c2e2f;
+}
+
+.text-input {
+    height: 44px;
+    padding: 0 13px;
+    border-radius: 5px;
+    border: 1px solid #c5ccd1;
+    transition: border-color .3s ease 0s;
+    margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+    font-family: HelveticaNeue-Light,Helvetica Neue Light,helvetica,arial,sans-serif;
+}
+
+.btn {
+    height: 44px;
+    margin-bottom: 0;
+    border: 1px solid #0070ba;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #0070ba;
+    transition: background-color .4s ease-out 0s;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-help {
+    font-size: .8em;
+}
